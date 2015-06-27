@@ -59,9 +59,6 @@ void thread_exit(void)
 	next_node = current->next;
 	if(current == next_node)
 		fullExit = TRUE;
-	// loop if last node and not only node
-//if (next_node == NULL && current != root)
-//		next_node = root;
 	// free thread memory
 	free(current->t->stack_pointer);
 	free(current->t);
@@ -69,12 +66,7 @@ void thread_exit(void)
 	//!!!!!!!!!! need to free the node as well !!!!!!!!!!!!
 	if(fullExit == TRUE)
 		longjmp(ret->buf, 1);
-
 	
-	
-	//free(current);
-	//if(current == NULL && next_node == NULL)
-	//	return;
 	dispatch();
 }
 
