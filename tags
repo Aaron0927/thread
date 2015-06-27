@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Boolean	threads.h	/^typedef short Boolean;$/;"	t
+CFLAGS	Makefile	/^CFLAGS = -O0 -ggdb3 -Wall$/;"	m
+FALSE	threads.h	8;"	d
+STACK_SIZE	threads.h	4;"	d
+THREADS_H_	threads.h	2;"	d
+TRUE	threads.h	7;"	d
+argument	threads.h	/^	void *argument;$/;"	m	struct:thread
+buf	threads.h	/^	jmp_buf buf;$/;"	m	struct:thread
+current	threads.h	/^struct node *current;$/;"	v	typeref:struct:node
+dispatch	threads.c	/^void dispatch(void) {$/;"	f
+ebp	threads.h	/^	void *ebp;$/;"	m	struct:thread
+esp	threads.h	/^	void *esp;$/;"	m	struct:thread
+exited	threads.h	/^Boolean exited;$/;"	v
+f1	main.c	/^void f1(void *arg)$/;"	f
+f2	main.c	/^void f2(void *arg) {$/;"	f
+f3	main.c	/^void f3(void *arg) {$/;"	f
+function	threads.h	/^	void (*function)(void *arg);$/;"	m	struct:thread
+last	threads.h	/^struct node *last;$/;"	v	typeref:struct:node
+main	main.c	/^int main(int argc, char **argv)$/;"	f
+next	threads.h	/^	struct node *next;$/;"	m	struct:node	typeref:struct:node::node
+next_node	threads.h	/^struct node *next_node;$/;"	v	typeref:struct:node
+node	threads.h	/^struct node {$/;"	s
+previous	threads.h	/^	struct node *previous;$/;"	m	struct:node	typeref:struct:node::node
+ret	threads.h	/^struct thread *ret;$/;"	v	typeref:struct:thread
+root	threads.h	/^struct node *root;$/;"	v	typeref:struct:node
+run	threads.h	/^	Boolean run;$/;"	m	struct:thread
+schedule	threads.c	/^void schedule(void) {$/;"	f
+stack_pointer	threads.h	/^	void *stack_pointer;$/;"	m	struct:thread
+t	threads.h	/^	struct thread *t;$/;"	m	struct:node	typeref:struct:node::thread
+thread	threads.h	/^struct thread {$/;"	s
+thread_add_runqueue	threads.c	/^void thread_add_runqueue(struct thread *t) {$/;"	f
+thread_create	threads.c	/^struct thread *thread_create(void (*f)(void *arg), void *arg) {$/;"	f
+thread_exit	threads.c	/^void thread_exit(void)$/;"	f
+thread_start_threading	threads.c	/^void thread_start_threading(void)$/;"	f
+thread_yield	threads.c	/^void thread_yield(void) {$/;"	f
