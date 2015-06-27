@@ -1,7 +1,7 @@
 线程函数介绍：
 1.线程创建：thread_create()
 2.加入到就绪队列：thread_add_runqueue()
-3.线程启动（只要在启动主线程就可以）：thread_start_threading()
+3.线程启动（只要在主线程中使用）：thread_start_threading()
 4.进入待执行状态：thread_yield()
 
 运行例子程序：
